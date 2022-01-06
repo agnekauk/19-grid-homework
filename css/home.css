@@ -30,6 +30,10 @@ body {
     padding: 15px;
     gap: 20px;
 }
+.hero {
+    grid-row: span3;
+    grid-area: hero;
+}
 .row .image {
     margin-left: calc(50% - 83px);
     height: 50px;
@@ -86,9 +90,6 @@ a:hover {
 }
 .header {
     grid-area: header;
-}
-.hero {
-    grid-area: hero;
 }
 .services {
     grid-area: services;
