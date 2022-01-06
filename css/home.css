@@ -1,1 +1,182 @@
-@import '../components/font-awesome.min.css';
+@import './font-awesome.min.css';
+
+body {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+.container {
+    display: grid;
+    grid-column-start: 2;
+    gap: 20px;
+    grid-template-areas:
+        'header'
+        'hero'
+        'services'
+        'freelance'
+        'testimonials'
+        'footer'
+        'nav';
+}
+.row {
+    display: grid;
+    text-align: justify;
+    border: 1px solid;
+    padding: 15px;
+    gap: 20px;
+}
+.row .image {
+    margin-left: calc(50% - 83px);
+    height: 50px;
+    padding: 5px;
+}
+.nav-top {
+    display: none;
+}
+.socials {
+    text-align: center;
+    display: none;
+}
+.fa {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px;
+}
+.fa:hover {
+    color: #fff;
+    background-color: #000;
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+p {
+    border: 1px solid;
+    margin: 0;
+}
+.footer-content {
+    text-align: center;
+    grid-area: footer;
+}
+a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(230, 36, 69);
+}
+a:hover {
+    text-decoration: underline;
+}
+.advertise {
+    grid-area: ads;
+    text-align: center;
+    border: 1px solid;
+    display: none;
+}
+.header {
+    grid-area: header;
+}
+.hero {
+    grid-area: hero;
+}
+.services {
+    grid-area: services;
+}
+.testimonials {
+    grid-area: testimonials;
+}
+.freelance {
+    grid-area: freelance;
+}
+
+@media (min-width: 600px) {
+    body {
+        grid-template-columns: 1fr 500px 1fr;
+    }
+}
+@media (min-width: 700px) {
+    body {
+        grid-template-columns: 1fr 600px 1fr;
+    }
+    .container {
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+            'header header'
+            'hero hero'
+            'services services'
+            'testimonials testimonials'
+            'freelance freelance'
+            'footer footer';
+    }
+    .nav-bottom {
+        display: none;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .socials {
+        display: block;
+        grid-column-start: 4;
+        text-align: right;
+    }
+    .services,
+    .testimonials {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .services > p:nth-child(3) {
+        display: none;
+    }
+    .title {
+        grid-column: span 2;
+    }
+}
+@media (min-width: 800px) {
+    body {
+        grid-template-columns: 1fr 700px 1fr;
+    }
+}
+@media (min-width: 900px) {
+    body {
+        grid-template-columns: 1fr 800px 1fr;
+    }
+    .advertise {
+        display: grid;
+    }
+    .container {
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-areas:
+            'header header header'
+            'hero hero hero'
+            'testimonials testimonials ads'
+            'services services ads'
+            'freelance freelance ads'
+            'footer footer footer';
+    }
+    .image {
+        grid-area: image;
+    }
+    .socials {
+        grid-area: socials;
+    }
+    .nav-top {
+        display: flex;
+        grid-area: nav-top;
+        gap: 30px;
+        justify-content: center;
+    }
+    .header {
+        grid-template-areas: 'image nav-top nav-top socials';
+    }
+}
