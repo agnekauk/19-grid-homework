@@ -31,8 +31,10 @@ body {
     gap: 20px;
 }
 .hero {
-    grid-row: span3;
     grid-area: hero;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
 }
 .row .image {
     margin-left: calc(50% - 83px);
