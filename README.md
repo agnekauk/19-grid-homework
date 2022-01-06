@@ -11,7 +11,7 @@ This project is for **educational** porpuses only. Pull request are welcome, but
 
 Site published at: https://agnekauk.github.io/nd-grid/
 
-Design: [Example](unknown.png)
+Design: [Example](./img/unknown.png)
 
 ## Project features
 
