@@ -14,7 +14,7 @@ main {
     grid-column-start: 2;
 }
 .header {
-    display: grid;
+    display: flex;
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -78,6 +78,17 @@ p {
 .footer-content {
     text-align: center;
     grid-area: footer;
+    margin-bottom: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    bottom: 3px;
+    background-color: #fff;
 }
 a {
     text-align: center;
@@ -188,11 +199,8 @@ a:hover {
     }
     .nav {
         display: flex;
-        position: fixed;
-        top: 3px;
-        right: calc(50% - 124px);
-        justify-content: center;
-        border: none;
-        gap: 30px;
+        top: 20px;
+        background-color: transparent;
+        width: 30%;
     }
 }
