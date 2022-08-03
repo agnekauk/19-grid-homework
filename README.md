@@ -9,7 +9,7 @@ _32 group website project_
 
 This project is for **educational** porpuses only. Pull request are welcome, but priority for project authors! **_Thank you for your cooperation!_**
 
-Site published at: https://agnekauk.github.io/nd-grid/
+Site published at: https://agnekauk.github.io/19-grid-homework/
 
 Design: [Example](./img/unknown.png)
 
