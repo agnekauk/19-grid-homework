@@ -82,13 +82,15 @@ p {
 }
 nav {
     display: flex;
-    justify-content: space-between;
+    gap:30px;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    width: 75%;
-    bottom: 3px;
+    width:90%;
+    bottom: 1px;
     background-color: #fff;
+    padding: 10px;
+    justify-content: center;
 }
 a {
     text-align: center;
@@ -133,9 +135,12 @@ a:hover {
             'freelance freelance'
             'footer footer';
     }
-    .nav {
-        display: none;
-    }
+   .nav {
+       display: flex;
+       top: 20px;
+       background-color: transparent;
+       width: 30%;
+   }
     .header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -197,10 +202,10 @@ a:hover {
     .header {
         grid-template-areas: 'image nav nav socials';
     }
-    .nav {
+    /* .nav {
         display: flex;
         top: 20px;
         background-color: transparent;
         width: 30%;
-    }
+    } */
 }
